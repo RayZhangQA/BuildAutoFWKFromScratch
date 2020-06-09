@@ -1,0 +1,6 @@
+21:45:40.101 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+21:45:43.313 [main] INFO  Academy.validateTitle - Successfully validated Text message!
+21:45:48.847 [main] INFO  Academy.validateTitle - The validation of Feature Title is completed!
+21:45:50.412 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+21:45:54.334 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+21:46:10.932 [main] INFO  Academy.HomePage - This is a nonRestricted User!

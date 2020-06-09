@@ -1,0 +1,79 @@
+21:46:13.094 [main] INFO  Academy.HomePage - Login Error Page is loaded
+21:46:16.622 [main] INFO  Academy.HomePage - The Login Process is completed
+21:46:34.605 [main] INFO  Academy.HomePage - This is a Restricted User!
+21:46:36.765 [main] INFO  Academy.HomePage - Login Error Page is loaded
+21:46:42.329 [main] INFO  Academy.HomePage - The Login Process is completed
+21:47:53.571 [main] INFO  Academy.validateTitle - Driver is initialized!
+21:47:53.586 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+21:47:56.478 [main] INFO  Academy.validateTitle - Successfully validated Text message!
+21:48:02.105 [main] INFO  Academy.validateTitle - The validation of Feature Title is completed!
+21:48:03.405 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+21:48:06.849 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+21:48:25.765 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+21:48:27.924 [main] INFO  Academy.HomePage - Login Error Page is loaded
+21:48:31.146 [main] INFO  Academy.HomePage - The Login Process is completed
+21:48:46.631 [main] INFO  Academy.HomePage - This is a Restricted User!
+21:48:48.754 [main] INFO  Academy.HomePage - Login Error Page is loaded
+21:48:52.525 [main] INFO  Academy.HomePage - The Login Process is completed
+22:18:16.319 [main] INFO  Academy.validateTitle - Driver is initialized!
+22:18:16.343 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+22:18:20.388 [main] INFO  Academy.validateTitle - Successfully validated Text message!
+22:18:23.097 [main] INFO  Academy.validateTitle - The Login Process is completed
+22:18:30.330 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+22:18:30.756 [main] INFO  Academy.validateNavigationBar - The validation of Navigation Bar is completed!
+22:18:48.116 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+22:18:48.301 [main] INFO  Academy.HomePage - Login Error Page is loaded
+22:18:55.951 [main] INFO  Academy.HomePage - This is a Restricted User!
+22:18:56.104 [main] INFO  Academy.HomePage - Login Error Page is loaded
+22:18:58.260 [main] INFO  Academy.HomePage - The Login Process is completed
+22:27:05.289 [main] INFO  Academy.validateTitle - Driver is initialized!
+22:27:05.337 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+22:27:10.049 [main] INFO  Academy.validateTitle - Successfully validated Text message!
+22:27:12.809 [main] INFO  Academy.validateTitle - The Login Process is completed
+22:27:20.271 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+22:27:22.528 [main] INFO  Academy.validateNavigationBar - The validation of Navigation Bar is completed!
+22:27:37.332 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+22:27:37.446 [main] INFO  Academy.HomePage - Login Error Page is loaded
+22:27:47.005 [main] INFO  Academy.HomePage - This is a Restricted User!
+22:27:47.174 [main] INFO  Academy.HomePage - Login Error Page is loaded
+22:27:47.361 [main] INFO  Academy.HomePage - The Login Process is completed
+11:14:41.856 [main] INFO  Academy.validateTitle - Driver is initialized!
+11:14:41.914 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+11:14:48.636 [main] INFO  Academy.validateTitle - The Login Process is completed
+11:14:55.637 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+11:14:56.468 [main] INFO  Academy.validateNavigationBar - The validation of Navigation Bar is completed!
+11:15:09.615 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+11:15:09.796 [main] INFO  Academy.HomePage - Login Error Page is loaded
+11:15:16.456 [main] INFO  Academy.HomePage - This is a Restricted User!
+11:15:16.581 [main] INFO  Academy.HomePage - Login Error Page is loaded
+11:15:18.747 [main] INFO  Academy.HomePage - The Login Process is completed
+11:58:01.614 [main] INFO  Academy.validateTitle - Driver is initialized!
+11:58:01.644 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+11:58:12.408 [main] INFO  Academy.validateTitle - The Login Process is completed
+11:58:23.577 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+11:58:25.911 [main] INFO  Academy.validateNavigationBar - The validation of Navigation Bar is completed!
+11:58:39.403 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+11:58:39.628 [main] INFO  Academy.HomePage - Login Error Page is loaded
+11:58:45.932 [main] INFO  Academy.HomePage - This is a Restricted User!
+11:58:46.075 [main] INFO  Academy.HomePage - Login Error Page is loaded
+11:58:46.306 [main] INFO  Academy.HomePage - The Login Process is completed
+13:30:54.483 [main] INFO  Academy.validateTitle - Driver is initialized!
+13:30:54.587 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+13:31:00.759 [main] INFO  Academy.validateTitle - The Login Process is completed
+13:31:07.064 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+13:31:07.763 [main] INFO  Academy.validateNavigationBar - The validation of Navigation Bar is completed!
+13:31:26.045 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+13:31:26.206 [main] INFO  Academy.HomePage - Login Error Page is loaded
+13:31:32.713 [main] INFO  Academy.HomePage - This is a Restricted User!
+13:31:32.830 [main] INFO  Academy.HomePage - Login Error Page is loaded
+13:31:33.020 [main] INFO  Academy.HomePage - The Login Process is completed
+13:34:25.661 [main] INFO  Academy.validateTitle - Driver is initialized!
+13:34:25.686 [main] INFO  Academy.validateTitle - Navigated to Home Page!
+13:34:36.153 [main] INFO  Academy.validateTitle - The Login Process is completed
+13:34:46.798 [main] INFO  Academy.validateNavigationBar - The Navigation Bar is captured!
+13:34:49.268 [main] INFO  Academy.validateNavigationBar - The validation of Navigation Bar is completed!
+13:35:06.833 [main] INFO  Academy.HomePage - This is a nonRestricted User!
+13:35:07.051 [main] INFO  Academy.HomePage - Login Error Page is loaded
+13:35:14.401 [main] INFO  Academy.HomePage - This is a Restricted User!
+13:35:14.534 [main] INFO  Academy.HomePage - Login Error Page is loaded
+13:35:16.718 [main] INFO  Academy.HomePage - The Login Process is completed
