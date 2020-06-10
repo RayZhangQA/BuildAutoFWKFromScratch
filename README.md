@@ -1,82 +1,202 @@
-# Using Maven within the Eclipse IDE - Tutorial
-The practice of creating a Maven Java Project
+Udemy - Selenium WebDriver with Java - Basic to Advanced + Frameworks
 
-### 1. Using Maven with the Eclipse IDE
-The Eclipse IDE provides excellent support for the Maven. This tooling is developed in the M2Eclipse project.
+Section: Framework Building from Scratch - Real Time Project
 
-This tooling manages the project dependencies and updates the classpath of the project dependencies in the Eclipse IDE. It ensures that the Maven experience in Eclipse is as smooth as possible. The tooling also provides different kind of wizards import andto create new Maven based projects.
+# Building Framework From Scratch
 
-It also provides an editor for the pom.xml Maven configuration file via a structured interface. You can select the tab labeled pom.xml to edit the XML data directly.
+##### 1. Creating of Maven Project
 
-### 2. Installation and configuration of Maven for Eclipse
-#### 2.1. Install the Maven support for Eclipse (m2e)
-Most Eclipse downloads include the Maven tooling already. If it is missing in your installation, you can install it via the main update of your release via Help  Install New Software. The following listing contains the update site for the Neon release and an update site maintained by the m2e project.
+##### 2. Creating Base and Utility Functions
 
-For the usage of Maven for Java projects, you only need the m2e component. For Java web development you also want the m2e-wtp entry.
+##### 3. Organize Page Objects
 
-#### 2.2. Download the Maven index
-By default, the Maven tooling does not download the Maven index for the Eclipse IDE. Via the Maven index you can search for dependencies, select them and add them to your pom file. To download the index, select Windows  Preferences  Maven and enable the Download repository index updates on startup option.
+##### 4. Adding Tests
+	
+##### 5. Data Driving and Parameterizing Tests
 
-After changing this setting, restart Eclipse. This triggers the download of the Maven index. You may want to remove this flag after restarting to avoid network traffic at every start of Eclipse.
+##### 6. Converting into TestNG Framework
 
-### 3. Exercise: Create a new Maven enabled project via Eclipse
-This exercise demonstrates the creation of a new Maven enabled project in Eclipse.
+##### 7. TestNG Listeners
 
-#### 3.1. Create Maven project
-Create a new Maven project via File  New  Other…​  Maven  Maven Project.
+##### 8. Screenshot on Test Failures
 
-On the first wizard page you can select if you want to create a simple project. In this case you skip the archetype selection. In this exercise we want to use an archetype as template for our project creation.
+##### 9. Creating Excellent HTML reports for Test Results
+	
+##### 10. Jenkins - Continuous Integration
 
-Press next, filter for the "quickstart" archetype and select the maven-archetype-quickstart entry. This is the classical Maven example archetype for project creation.
 
-On the last tab enter the GAV of your project similar to the following screenshot.
 
-#### 3.2. Run the build
-Validate that the generate setup works correctly by running the build. For this right-click the pom.xml file and select Run As  Maven build.
+# Creation of Maven Project
 
-This opens a dialog which allows to define the parameters for the start. Enter clean verify in the Goals: field and press the Run button.
+##### 1. Create a Maven Project
 
-#### 3.3. Adding dependencies to your project
-The Eclipse Maven tooling makes adding dependencies to the classpath of your project simple. In can directly add it to your pom file, or use the Dependencies tab of the pom editor.
+		>cd <eclipse-workspace>
+		>mvn archetype:generate -DgroupId=Academy -DartifactId=E2EProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
-Switch to the Dependencies tab and press the Add button.
+##### 2. Compatible with Eclipse
 
-In this example we add Gson as dependency. For this we use the GAV which we found via the http://search.maven.org website. If the Maven index was downloaded (See [maven_eclipseinstallation_index] you can also search directly this dependency via the dialog.
+		>cd <root directory of the new project>
+		>mvn eclipse:eclipse
 
-#### 3.4. Use library
-Change or create the App.java class in your src/main/java folder. This classes uses Gson. As Maven added it to your classpath, it should compile and you should be able to start the class via Eclipse.
+##### 3. Import the project to Eclipse
 
-### 4. Exercise: Add Maven support to a Java project in Eclipse
-This exercise demonstrates how to convert a Java project to a Maven project.
+* Open Eclipse
+* Files ==> Import... 
+* Select ==> Maven//Existing Maven Project ==> Next
+* Maven Projects ==> Browse ==> Project Root Folder ==> Select Folder ==> Finish
+* The project will be imported into Eclipse shortly.
 
-#### 4.1. Create Java project
-Create a new Java project called com.vogella.build.maven.simple in Eclipse.
+>* src/test/java - All the test cases created here
+>* src/main/java - All the utilities, base objects, data and etc.
+>* pom.xml - the maven configure file
 
-Add one class called Main. This class should have a main method, which write "Hello Maven!" to the command line.
+##### 4. Add All Dependencies and Plugins to pom.xml
 
-#### 4.2. Convert to Maven project
-Select your project, right-click on it and select Configure  Convert to Maven project…​.
+* Selenium Dependency ==> search "Selenium Maven Information"
 
-#### 4.3. Execute the Maven build
-Right-click the pom.xml file and select Run As  Maven build.
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+	
+* TestNG Dependency ==> search "TestNG Maven Dependency"
 
-### 5. Exercise: Create a Java web project in Eclipse using Maven
-This exercise demonstrates how to create a web application in Eclipse which uses Maven. It assumes that you have already configured Eclipse for the creation of web applications.
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+			<scope>test</scope>
+		</dependency>
 
-#### 5.1. Create Maven web project project
-Create a new Maven project called com.vogella.javaweb.maven.first via the File  New  Other  Maven  Maven Project entry. On the archetype selection, select the maven-archetype-webapp entry and click the Next button.
+* Save "pom.xml" will get all the dependencies added to the project local repository.
+	
 
-#### 5.2. Build your project
-Similar to [example_eclipsemavenproject_runningthebuild] run your mvn clean verify build command from Eclipse. Validate that there are no issues with the build.
+# Creating Base and Utility Functions
 
-#### 5.3. Run on the server
-Right-click your project and select the Run As  Run on Server menu entry.
+##### 1. Create base java class in src/main/java
 
-### 6. References for Webdevelopment with Eclipse
-To use Maven in Eclipse for Java web development, you should also install an configure the Eclipse web development tools (WTP). See Eclipse Web Development Tools for a tutorial.
+##### 2. Create public void initializeDriver() method
 
-### 7. Eclipse Maven (m2e) resources
-m2e book - http://books.sonatype.com/m2eclipse-book/reference
+##### 3. java.lang.NullPointerException
+if (browserName == "chrome") - wrong. shouldn't use "==".
 
-New Maven 3.3.1 Features: Core Extensions - 
-http://takari.io/2015/03/19/core-extensions.html
+extract the value from property file, need use browserName.equalsTo("String");
+
+* == is a reference comparison, i.e. both objects point to the same memory location
+* .equals() evaluates to the comparison of values in the objects
+
+##### 4. data.properties
+* each line ended without semicolon otherwise will cause the problem.
+
+# Creation page objects
+
+##### 1. Create base java class in src/main/java
+
+##### 2. Create public void initializeDriver() method
+
+##### 3. java.lang.NullPointerException
+if (browserName == "chrome") - wrong. shouldn't use "==".
+
+extract the value from property file, need use browserName.equalsTo("String");
+
+* == is a reference comparison, i.e. both objects point to the same memory location
+* .equals() evaluates to the comparison of values in the objects
+* 
+* need give the live of driver in LandingPage class
+
+		public WebDriver driver;
+		public LandingPage(WebDriver driver) {
+			this.driver = driver;
+		}
+	
+
+##### 4. data.properties
+* each line ended without semicolon otherwise will cause the problem.
+
+##### 5. TestNG maven integration
+* Right click the Project-Name ==> TestNG ==> Convert to TestNG
+* "testng.xml" file will be created.
+* Right click "testng.xml" ==> Run As ==> TestNG Suite
+* Running as mvn project from command line
+
+		>cd <project root directory>
+		>mvn compile
+		>mvn test
+
+##### 6. Integrate Log4j to Maven build
+* Search log4j maven dependency
+* Append the dependency to pom.xml
+* Check if Project//Build Automatically is selected.
+* Add resource folder of "log4j.xml" to "pom.xml" file
+
+	<resources>
+			<resource>
+				<directory>src/main/recources</directory>
+				<filtering>true</filtering>
+		</resource>
+	<resources>
+	
+* Add the source file to java build path - otherwise the system does not know where to find the log4j2.xml configuration file.2
+* right click project ==> Build Path ==> Configure Build Path... ==> Java Build Path//Source Folde
+
+##### 7. Fix the framework issues by tweaking TestNG configuration file.
+* The 1st and 2nd windows are not closed before the 3rd window opens. They all closed after the tests are completed.
+* This is because the TestNG configured the 3 classes inside 1 test. 
+* Define each class under 1 set of the test to avoid the windows closing issue. 
+* put "driver = null;" after driver.close(); -- release the memory.
+* Change the driver initialize to static that has more advantages. 
+
+##### 8. Screenshot on Failure - TestNG Listeners
+* Add Apache commons-io maven dependency to pom.xml
+* Add getScreenshot() method in base class
+* Create a listener class and implements ITestListener
+* Invoke getScreenshot() in Failed Listener.
+* Configure testng.xml - adding the listener.
+
+			<listeners>
+				<listener class-name="Academy.Listeners"/>
+			</listeners> 
+
+##### 9. Excellent HTML Reports on Test Execution - Extent - Report API & Dashboard
+* Get the dependency of "extentreports" and add it to pom.xml
+* Get the ExtentReporterNG.java class to be added to the project
+* Add ExtentReporterNG as a listener.
+
+##### 10. Integrate the project to Jenkins CI tool
+* Jenkins installation
+* http://localhost:8080/ - Jenkins console
+* Jenkins ==> Manage Jenkins ==> Global Tool Configuration
+
+>* JDK setup
+>* GIT setup
+>* Maven setup
+
+* New Item ==> Enter"E2EProject" ==> General ==> Advanced ==> Use custom workspace
+* Build ==> Add build step ==> Invoke top-level Maven targets ==> put the mvn command to the Goals
+* Optional - Build Triggers ==> Build periodically
+
+##### 11. Parameterize Jenkins Build with different browsers execution
+
+##### 12. Coding Standards - Private locators & Public methods to achieving Encapsulation 
+* OOPS Principle Framework
+
+##### 13. Remove hard coded Paths from everywhere in the Project
+
+##### 14. Achieve Chrome Headless Execution Mechanism
+
+##### 15. How Inheritance is achieved in Framework
+
+##### 16. Where are Interfaces used in the framework
+
+##### 17. Can there be multiple @Test methods in one single class? What changes needed in Testng.xml file to club multiple @Test methods into one single Test Tag.
+
+##### 18. Can driver be static without initializing it form every Test?
+
+
+
+##### 19. Enhancement
+* Add the timestamp to the screenshot file.
+* Add the webdrivers to resources folder and change the path to dynamic path
+
+* 
